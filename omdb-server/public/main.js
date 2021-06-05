@@ -34,7 +34,7 @@ class OmdbService {
         if (this.movieTitle === undefined || this.movieTitle === null) {
             this.movieTitle = '';
         }
-        const url = 'http://localhost:3000/omdb/search?title=' + this.movieTitle;
+        const url = 'http://shubhbusin.xyz/omdb/search?title=' + this.movieTitle;
         return this.http.get(url);
     }
 }
